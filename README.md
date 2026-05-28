@@ -1,4 +1,4 @@
-# Rate Limiter Service
+<img width="1205" height="176" alt="image" src="https://github.com/user-attachments/assets/1e0d520a-454b-478b-aa4b-4792cce8e48b" /><img width="1105" height="585" alt="image" src="https://github.com/user-attachments/assets/0c0cd71f-ec5e-4fbe-9c2b-0a4ab85092fe" /># Rate Limiter Service
 
 A lightweight HTTP rate limiter service that limits requests by IP address, built with Python (FastAPI), Redis, and deployed on Kubernetes.
 
@@ -111,11 +111,13 @@ Expected response:
 ```json
 {"status": "healthy", "redis": "connected"}
 ```
+<img width="1105" height="585" alt="image" src="https://github.com/user-attachments/assets/ed18beec-b3c8-4c9e-8aa8-d5d102281c74" />
 
 **4. Stop the services:**
 ```bash
 docker-compose down
 ```
+<img width="1205" height="176" alt="image" src="https://github.com/user-attachments/assets/a88cddc8-645a-4715-b27d-7277dcf5f90c" />
 
 ---
 
