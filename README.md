@@ -1,6 +1,7 @@
 # Rate Limiter Service
 
 A lightweight HTTP rate limiter service that limits requests by IP address, built with Python (FastAPI), Redis, and deployed on Kubernetes.
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/d22012b8-51b5-4212-8b8e-6b243e3baa2b" />
 
 ---
 
