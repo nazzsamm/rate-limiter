@@ -78,6 +78,7 @@ The rate limiter is configured via environment variables, managed through a Kube
 | `REDIS_PORT` | `6379` | Redis port |
 
 To change the configuration, edit `k8s/configmap.yaml` before deploying:
+<img width="948" height="766" alt="image" src="https://github.com/user-attachments/assets/5a974aa5-f6d8-47c7-b138-4f175cf63911" />
 
 ```yaml
 data:
