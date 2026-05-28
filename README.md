@@ -1,4 +1,4 @@
-<img width="1205" height="176" alt="image" src="https://github.com/user-attachments/assets/1e0d520a-454b-478b-aa4b-4792cce8e48b" /><img width="1105" height="585" alt="image" src="https://github.com/user-attachments/assets/0c0cd71f-ec5e-4fbe-9c2b-0a4ab85092fe" /># Rate Limiter Service
+<img width="845" height="116" alt="image" src="https://github.com/user-attachments/assets/d6457327-18b7-46be-a168-29691f8282a8" /><img width="1205" height="176" alt="image" src="https://github.com/user-attachments/assets/1e0d520a-454b-478b-aa4b-4792cce8e48b" /><img width="1105" height="585" alt="image" src="https://github.com/user-attachments/assets/0c0cd71f-ec5e-4fbe-9c2b-0a4ab85092fe" /># Rate Limiter Service
 
 A lightweight HTTP rate limiter service that limits requests by IP address, built with Python (FastAPI), Redis, and deployed on Kubernetes.
 
@@ -127,6 +127,8 @@ docker-compose down
 ```bash
 minikube start --driver=docker
 ```
+<img width="933" height="275" alt="image" src="https://github.com/user-attachments/assets/2470af00-1b02-48ad-961f-e9932061445b" />
+
 
 **2. Point Docker to Minikube's Docker daemon (run in PowerShell):**
 ```powershell
@@ -137,6 +139,8 @@ minikube docker-env | Invoke-Expression
 ```bash
 docker build -t rate-limiter:latest .
 ```
+<img width="1009" height="540" alt="image" src="https://github.com/user-attachments/assets/c77a7fc1-c730-4619-a434-dae55a446896" />
+
 
 **4. Apply all Kubernetes manifests:**
 ```bash
@@ -144,6 +148,8 @@ kubectl apply -f k8s/configmap.yaml
 kubectl apply -f k8s/redis-deployment.yaml
 kubectl apply -f k8s/rate-limiter-deployment.yaml
 ```
+<img width="988" height="233" alt="image" src="https://github.com/user-attachments/assets/59f0a46d-eb10-45ae-8c63-ff6e84350002" />
+
 
 **5. Verify all pods are running:**
 ```bash
@@ -156,15 +162,22 @@ NAME                            READY   STATUS    RESTARTS   AGE
 rate-limiter-xxxxxxxxxx-xxxxx   1/1     Running   0          10s
 redis-xxxxxxxxxx-xxxxx          1/1     Running   0          20s
 ```
+<img width="845" height="116" alt="image" src="https://github.com/user-attachments/assets/02ba14d9-2479-44dc-80d9-1f676d7ea5fc" />
 
 **6. Get the service URL:**
 ```bash
 minikube service rate-limiter-service --url
 ```
+<img width="1049" height="141" alt="image" src="https://github.com/user-attachments/assets/332f1f1e-d1b1-451d-bc9f-8d7fa7a5be5e" />
 
 This returns a URL like `http://127.0.0.1:XXXXX`. Keep this terminal open and use this URL for all requests.
 
 ---
+<img width="1135" height="442" alt="image" src="https://github.com/user-attachments/assets/2d07ca3c-c1df-4623-bbd9-32c4d9d27236" />
+<img width="1149" height="397" alt="image" src="https://github.com/user-attachments/assets/ef4fa285-d984-4f98-a6d6-7d32f7701659" />
+<img width="1138" height="434" alt="image" src="https://github.com/user-attachments/assets/64444441-36a3-4ea7-8a8d-c6a26ed0f00a" />
+<img width="1182" height="678" alt="image" src="https://github.com/user-attachments/assets/e2443529-bfa1-481f-929e-558440e1edc9" />
+
 
 ## Interacting with the Service
 
