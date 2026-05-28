@@ -176,7 +176,6 @@ This returns a URL like `http://127.0.0.1:XXXXX`. Keep this terminal open and us
 <img width="1135" height="442" alt="image" src="https://github.com/user-attachments/assets/2d07ca3c-c1df-4623-bbd9-32c4d9d27236" />
 <img width="1149" height="397" alt="image" src="https://github.com/user-attachments/assets/ef4fa285-d984-4f98-a6d6-7d32f7701659" />
 <img width="1138" height="434" alt="image" src="https://github.com/user-attachments/assets/64444441-36a3-4ea7-8a8d-c6a26ed0f00a" />
-<img width="1182" height="678" alt="image" src="https://github.com/user-attachments/assets/e2443529-bfa1-481f-929e-558440e1edc9" />
 
 
 ## Interacting with the Service
@@ -196,6 +195,7 @@ Response when allowed (`200 OK`):
   "ip": "10.244.0.1"
 }
 ```
+<img width="1107" height="353" alt="image" src="https://github.com/user-attachments/assets/54e21d13-75c8-445a-b2e0-595573b26272" />
 
 Response when rate limited (`429 Too Many Requests`):
 ```json
@@ -205,6 +205,7 @@ Response when rate limited (`429 Too Many Requests`):
   "ip": "10.244.0.1"
 }
 ```
+<img width="1016" height="493" alt="image" src="https://github.com/user-attachments/assets/9bc60255-2dfd-4889-bb85-4e4753fdb3f7" />
 
 ### Test rate limiting (send 10 requests rapidly)
 
@@ -212,6 +213,7 @@ Response when rate limited (`429 Too Many Requests`):
 ```powershell
 for ($i=1; $i -le 10; $i++) { curl http://127.0.0.1:XXXXX/api/test -UseBasicParsing }
 ```
+<img width="1195" height="709" alt="image" src="https://github.com/user-attachments/assets/f6343bfd-a826-45cc-a734-fdafa9ef4cb5" />
 
 **Linux/Mac:**
 ```bash
