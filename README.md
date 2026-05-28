@@ -100,6 +100,7 @@ Use Docker Compose to run the service locally before deploying to Kubernetes.
 ```bash
 docker-compose up --build
 ```
+<img width="984" height="610" alt="image" src="https://github.com/user-attachments/assets/bb15afda-88d0-484b-9e30-5cb9d8d3a1ce" />
 
 **3. Verify the service is running:**
 ```bash
